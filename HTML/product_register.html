@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAIL</title>
+    <link rel="stylesheet" href="css/a_register.css">
+</head>
+
+<body class="background">
+    <header class="logo">
+        <img src="ship.jpg" alt="" class="logo-img">
+        <h1 class="logo-h1">-wellcome to SAIL-</h1>
+    </header>
+    <main>
+        <div class="main-inner">
+            <section class="register-section">
+                <h2>ブログを書きましょう</h2>
+                <form th:action="@{/product/register/process}" method="post" enctype="multipart/form-data">
+                    <div class="register-section-details">
+                        <div class="register-section-details_flex">
+                            <div>商品名</div>
+                            <input type="text" name="productName" value="">
+                        </div>
+                        <div class="register-section-details_flex">
+                            <div>カテゴリー</div>
+                            <select name="productCategory">
+                                <option value=""></option>
+                                <option value="シャープペン">シャープペン</option>
+                                <option value="消しゴム">消しゴム</option>
+                                <option value="鉛筆">鉛筆</option>
+                            </select>
+                        </div>
+                        <div class="register-section-details_flex">
+                            <div>商品画像</div>
+                            <input type="file" name="productImage">
+                        </div>
+                        <div class="register-section-details_flex">
+                            <div>商品の説明</div>
+                            <textarea name="productDescription" placeholder="商品の説明文"></textarea>
+                        </div>
+
+                    </div>
+                    <div class="register-section-details_flex">
+                        <button class="register">登録</button>
+                        <button class="back-btn" onclick="history.back();" type="button">戻る</button>
+                    </div>
+                </form>
+            </section>
+        </div>
+    </main>
+
+
+
+
+
+    <footer>
+        <div>
+            <small>&copy; 2023 Riuni</small>
+        </div>
+    </footer>
+</body>
+
+</html>
