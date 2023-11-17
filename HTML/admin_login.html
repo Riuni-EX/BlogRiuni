@@ -17,12 +17,12 @@
         <form th:action="@{}" method="post">
             <div class="user-login-form">
                 <div class="form-row">
-                    <label for="email" class="user-login-ep">メールアドレス-----</label>
-                    <input type="text" id="email" name="email" required>
+                    <label for="email" class="user-login-ep">メールアドレス</label>
+                    <input type="text" id="email" name="email" class="user-login-email" required placeholder="メールアドレスを入力してください">
                 </div>
                 <div class="form-row">
-                    <label for="password" class="user-login-ep">パスワード----------</label>
-                    <input type="password" id="password" name="password" required>
+                    <label for="password" class="user-login-ep">パスワード</label>
+                    <input type="password" id="password" name="password" class="user-login-password" required placeholder="パスワードを入力してください">
                 </div>
                 <div class="form-row">
                     <button class="user-login-btn">ログイン</button>

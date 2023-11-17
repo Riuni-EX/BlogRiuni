@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>商品登録</title>
+    <title>ブログ登録</title>
     <link rel="stylesheet" href="css/a_register.css">
 </head>
 
@@ -16,20 +16,20 @@
     <main>
         <div class="main-inner">
             <section class="register-section">
-                <h2>管理者登録画面</h2>
+                <h2>ブログを書く</h2>
                 <form th:action="@{}" method="post">
                     <div class="register-section-details">
                         <div class="register-section-details_flex">
-                            <label for="email" class="user-login-ep">名前------------</label>
-                            <input type="text" name="adminName" value="">
+                            <label for="name" class="user-login-ep">名前------------</label>
+                            <input type="text" name="adminName" value="" placeholder="名前を入力してください">
                         </div>
                         <div class="register-section-details_flex">
                             <label for="email" class="user-login-ep">メールアドレス-</label>
-                            <input type="text" name="adminEmail" value="">
+                            <input type="text" name="adminEmail" value="" placeholder="メールアドレスを入力してください">
                         </div>
                         <div class="register-section-details_flex">
-                            <label for="email" class="user-login-ep">パスワード-----</label>
-                            <input type="text" name="password" value="">
+                            <label for="password" class="user-login-ep">パスワード-----</label>
+                            <input type="password" name="password" value="" placeholder="パスワードを入力してください">
                         </div>
                     </div>
                     <div class="register-section-details_flex">

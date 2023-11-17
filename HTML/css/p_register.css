@@ -39,7 +39,52 @@ footer {
 }
 
 h2{
-    font-size: 50px;
+    font-size: 35px;
     color: #d31c56;
-    margin-bottom: 70px;
+}
+.register-section-details_flex{
+    display: flex;
+    font-size: 20px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.register-section-details_flex > div {
+    margin-right: 10px; /* 右边距 */
+}
+input{
+    padding: 5px; /* 内边距 */
+    margin-bottom: 10px; /* 底部外边距 */
+    border: 3px solid rgb(68, 68, 161); /* 边框样式 */
+    border-radius: 10px; /* 边框圆角 */
+    box-sizing: border-box; /* 确保元素的总宽度和高度包括边框和内边距 */
+    font-size: 15px; /* 字体大小 */
+}
+button{
+    display: inline-block;
+    padding: 5px 5px; /* 按钮内边距 */
+    font-size: 25px; /* 按钮文字大小 */
+    text-decoration: none; /* 去除链接的下划线 */
+    border-radius: 5px; /* 圆角大小 */
+    background-color: #182731; /* 按钮背景颜色 */
+    color: #fff; /* 按钮文字颜色 */
+    cursor: pointer; /* 鼠标样式为手型 */
+}
+input[type="file"] {
+    display: none;
+}
+.custom-file-input {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.custom-file-input-label {
+    display: inline-block;
+    padding: 10px;
+    border: 1px solid #3498db;
+    border-radius: 5px;
+    cursor: pointer;
 }

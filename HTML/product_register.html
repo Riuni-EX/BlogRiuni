@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SAIL</title>
-    <link rel="stylesheet" href="css/a_register.css">
+    <link rel="stylesheet" href="css/p_register.css">
 </head>
 
 <body class="background">
@@ -20,27 +20,29 @@
                 <form th:action="@{/product/register/process}" method="post" enctype="multipart/form-data">
                     <div class="register-section-details">
                         <div class="register-section-details_flex">
-                            <div>商品名</div>
-                            <input type="text" name="productName" value="">
+                            <div>標題</div>
+                            <input type="text" name="productName" value="" placeholder="標題を入力してください">
                         </div>
                         <div class="register-section-details_flex">
-                            <div>カテゴリー</div>
+                            <div>気持ち</div>
                             <select name="productCategory">
                                 <option value=""></option>
-                                <option value="シャープペン">シャープペン</option>
-                                <option value="消しゴム">消しゴム</option>
-                                <option value="鉛筆">鉛筆</option>
+                                <option value="嬉しい">嬉しい</option>
+                                <option value="楽しい">楽しい</option>
+                                <option value="怒">怒る</option>
+                                <option value="驚き">驚き</option>
+                                <option value="悲しい">悲しい</option>
+                                <option value="緊張">緊張</option>
                             </select>
                         </div>
                         <div class="register-section-details_flex">
-                            <div>商品画像</div>
-                            <input type="file" name="productImage">
+                            <span class="custom-file-input">写真のアップロード</span>
+                            <input type="file" id="file" name="productImage" placeholder="写真のアップロード">
                         </div>
                         <div class="register-section-details_flex">
-                            <div>商品の説明</div>
-                            <textarea name="productDescription" placeholder="商品の説明文"></textarea>
+                            <div>何を言いたいか？</div>
+                            <textarea name="productDescription" placeholder="あのね、"></textarea>
                         </div>
-
                     </div>
                     <div class="register-section-details_flex">
                         <button class="register">登録</button>

@@ -37,3 +37,9 @@ footer {
     bottom: 0; /* 底部对齐 */
     width: 100%;
 }
+
+.btn-radius {
+    text-decoration: none; /* 去除链接的下划线 */
+    color: #1b70a8; /* 链接文字颜色 */
+    font-size: 50px; /* 链接文字加粗 */
+}
